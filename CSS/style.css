@@ -358,3 +358,27 @@ background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;
 }
+/* toogle */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+}
